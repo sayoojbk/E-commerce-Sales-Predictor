@@ -5,7 +5,7 @@ from sklearn import model_selection
 
 
 
-pickle_in = open('MultivariateRegression.pickle', 'rb')
+pickle_in = open('GradientDescent.pickle', 'rb')
 Revised_theta = pickle.load(pickle_in)
 #print(Revised_theta)
 
@@ -23,9 +23,12 @@ Input = np.concatenate( (ones, Input), axis = 1)
 
 Output = data_frame.iloc[:, 3:4].values
 
-
+## Splitting the testing data
+## model_selection provides different testing data every time we run it.
 X_train , X_test, Y_train, Y_test = model_selection.train_test_split(Input, Output, test_size = 0.2)
 
+
+######### Checking accuracy of the algorithm
 
 def model_accuracy(X_test, Y_test, Revised_theta):
 	accuracy = np.zeros( [Y_test.shape[0] , 1] ) 
