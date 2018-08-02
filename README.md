@@ -10,7 +10,8 @@ Here we implement the GRADIENT DESCENT using the help of Python frameworks namel
       1.Numpy
       2.Pandas
       3.Sklearn(For testing purpose only to split the testing and training data using model_selection attribute) 
-      4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute with the                     expected data)
+      4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute with the                  
+                        expected data)
       
 We use the pickle module of python of to save our Revised Theta obtained using the gradient descent locally to file 
 with extension .pickle which can be directly used thereafter without training the model again.
