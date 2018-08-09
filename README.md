@@ -1,8 +1,12 @@
 # E-commerce-Sales-Predictor
+
+
 This is a basic machine learning project based on Multivariate Linear Regression based on the cost and gradient  formula.
 
 The dataset we used is a text file having attributes separated by commas.
 
+
+=======
         This machine learning project gives prediction of how much  a customer spends  Yearly 
         using the attributes as follows:
               1) Avg. Session Length	
@@ -14,7 +18,8 @@ The dataset we used is a text file having attributes separated by commas.
                1.Numpy
                2.Pandas
                3.Sklearn  (For testing purpose only to split the testing and training data using model_selection attribute) 
-               4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute                                  with the expected data)
+               4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute      
+                           with the expected data)
  
  
  
