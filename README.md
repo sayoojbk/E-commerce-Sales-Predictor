@@ -6,12 +6,20 @@ This is a basic machine learning project based on Multivariate Linear Regression
 The dataset we used is a text file having attributes separated by commas.
 
 
-Here we implement the GRADIENT DESCENT using the help of Python frameworks namely:
-      1.Numpy
-      2.Pandas
-      3.Sklearn(For testing purpose only to split the testing and training data using model_selection attribute) 
-      4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute with
-                  the expected data)
+=======
+        This machine learning project gives prediction of how much  a customer spends  Yearly 
+        using the attributes as follows:
+              1) Avg. Session Length	
+              2) Time on App
+              3) Time on Website
+              4) Length of Membership
+
+        Here we implement the GRADIENT DESCENT using the help of Python frameworks namely:
+               1.Numpy
+               2.Pandas
+               3.Sklearn  (For testing purpose only to split the testing and training data using model_selection attribute) 
+               4.Matplotlib (To check the cost function graph with each iteration and to check the linearity of each attribute      
+                           with the expected data)
  
  
  
@@ -27,4 +35,7 @@ The iterations we decided to be was  100,00,000. You can also chose around 10,00
 high. 
 If time constraint for compiling is not a issue then keeping iterations as high as possible is preferred to keep the model
 from predicting accurately.
+
+
+ 
 
