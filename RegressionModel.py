@@ -26,6 +26,8 @@ theta = np.zeros( [ 1, 4] )
 alpha  = 0.0003
 iters = 10000000
 
+X_train , X_test, Y_train, Y_test = model_selection.train_test_split(Input, Output, test_size = 0.2)
+
 
 
 def cost_function(X, Y, theta):
@@ -44,14 +46,14 @@ def gradient_descent( X, Y , theta, iters , alpha ):
 
 ####### The following line will run the gradient descent and give the least cost value
 
-Revised_theta, cost = gradient_descent(Input , Output ,theta, iters, alpha)
+Revised_theta, cost = gradient_descent(X_train , Y_train ,theta, iters, alpha)
 print(Revised_theta)
 
 ### Here we save our Revised theta list into .pickle file
 with open ('GradientDescent.pickle' , 'wb') as f:
 	pickle.dump(Revised_theta, f)
 
-finalCost = cost_function(Input, Output , Revised_theta)
+finalCost = cost_function(X_train, Y_train , Revised_theta)
 print(finalCost)
 
 ## Plotting the  cost function with each iteration to have a graphical idea of how our cost function is decreasing.
